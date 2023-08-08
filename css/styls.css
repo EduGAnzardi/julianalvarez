@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.menu1{
+    display: flex;
+    padding: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    background-color: #03045E;
+    justify-content: space-between;
+    gap: 1rem;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+
+.menu1 a{
+    text-decoration: none;
+}
+
+
+
+
+.titulo{
+    color: white;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 100px;
+    font-weight: 900;
+    background-image: url(./../img/fondojulian2.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+
+.footer{
+    display: flex;
+    color: white;
+    background-color: #03045E;
+    padding-block: 10px;
+    text-align: center;
+    padding-left: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.logo{
+    width: 10px;
+}
+
+
+
+.logosapp{
+    display: flex;
+    list-style-type: none;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+
+.biografia{
+    color: black;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    background-image: url(../img/julian\ besando\ la\ copa\ degrade.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+
+.biografia1{
+    margin: 0px 400px 100px 400px;
+    flex-wrap: wrap;
+}
+
+
+
+.tablariver{
+    width: 200px;
+    height: 200px;
+    border-collapse: collapse;
+    background-image: linear-gradient(to left,rgba(223, 18, 18, 0.836),white );
+    box-shadow: 5px 5px 5px gray;
+    position: absolute;
+    margin: 300px 175px;
+}
+
+.tablacity{
+    width: 200px;
+    height: 200px;
+    border-collapse: collapse;
+    background-image: linear-gradient(to left,rgb(54, 248, 255),white );
+    box-shadow: 5px 5px 5px gray;
+    position: absolute;
+    margin: 300px 175px;
+}
+
+
+
+.tablaarg{
+    width: 200px;
+    height: 200px;
+    border-collapse: collapse;
+    background-image: linear-gradient(to left,rgba(20, 26, 143, 0.836),white );
+    box-shadow: 5px 5px 5px gray;
+    position: absolute;
+    margin: 300px 175px;
+}
+
+
+
+
+td,th{
+    border: 2px solid black;
+    text-align: center;
+}
+
+.rectangulo1{
+    height: 100vh;
+    background-image: url(../img/julianriver.jpeg);
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.rectangulo2{
+    height: 100vh;
+    background-image: url(../img/juliancity.jpg);
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.rectangulo3{
+    height: 100vh;
+    background-image: url(../img/julianargentina.jpg);
+    background-size: cover;flex-wrap: wrap;
+}
+
+.estadisticas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-style: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+
+
+.palmares{
+    text-align: center;
+    background-image: url(../img/julianylachampions.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    font-style: 'Montserrat Alternates', sans-serif;
+    flex-wrap: wrap;
+}
+
+
+.titulosriver{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.tituloscity{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titulosarg{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caja1{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: -30px;
+}
+
+
+.caja2{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: -30px;
+}
+
+.caja3{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: -30px;
+}
+
+.caja4{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: -55px;
+}
+
+.caja5{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: -25px;
+}
+
+.caja6{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 10px;
+}
+
+.caja7{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 80px;
+}
+
+.caja8{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 30px;
+}
+
+.caja9{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 90px;
+}
+
+.caja10{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 100px;
+}
+
+.caja11{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 720px;
+}
+
+.caja12{
+    position: relative;
+    top: -20px;
+    right: auto;
+    bottom: auto;
+    left: 60px;
+}
+
+.caja13{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 160px;
+}
+
+.caja14{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 240px;
+}
+
+.caja15{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 270px;
+}
+
+.caja16{
+    position: relative;
+    top: -20px;
+    right: auto;
+    bottom: auto;
+    left: 750px;
+}
+
+
+
+.proximospartidos{
+    background-image: url(../img/julian\ y\ messi.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    max-width: 100%;
+}
+

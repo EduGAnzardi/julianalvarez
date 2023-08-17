@@ -6,19 +6,20 @@
     box-sizing: border-box;
 }
 
-
+/*menu de inicio*/
 .menu1{
     display: flex;
-    padding: 20px;
+    padding: 10px;
     font-family: 'Montserrat Alternates', sans-serif;
     color: white;
-    font-weight: 600;
-    font-size: 30px;
+    font-weight: 400;
+    font-size: 20px;
     background-color: #03045E;
     justify-content: space-between;
     gap: 1rem;
     list-style-type: none;
     flex-wrap: wrap;
+    min-width: 300px;
 }
 
 
@@ -27,8 +28,7 @@
 }
 
 
-
-
+/*pagina principal*/
 .titulo{
     color: white;
     font-family: 'Londrina Solid', cursive;
@@ -37,12 +37,13 @@
     background-image: url(./../img/fondojulian2.jpg);
     background-repeat: no-repeat;
     height: 100vh;
-    background-attachment: fixed;
     background-size: cover;
-    flex-wrap: wrap;
+    margin: -18px 0px;
+    flex-direction: column;
+    min-width: 300px;
 }
 
-
+/*footer de la web*/
 .footer{
     display: flex;
     color: white;
@@ -52,13 +53,17 @@
     padding-left: 10px;
     justify-content: space-between;
     flex-wrap: wrap;
+    min-width: 300px;
 }
 
 
 .logo{
-    width: 10px;
+    width: 50px;
 }
 
+.logosmarcas{
+    width: 50px;
+}
 
 
 .logosapp{
@@ -66,9 +71,11 @@
     list-style-type: none;
     margin-right: 10px;
     margin-top: 15px;
+    gap: 1rem;
 }
 
 
+/*biografia*/
 .biografia{
     color: black;
     font-family: 'Londrina Solid', cursive;
@@ -78,9 +85,8 @@
     background-image: url(../img/julian\ besando\ la\ copa\ degrade.png);
     background-repeat: no-repeat;
     height: 100vh;
-    background-attachment: fixed;
     background-size: cover;
-    flex-wrap: wrap;
+    min-width: 300px;
 }
 
 
@@ -90,7 +96,7 @@
 }
 
 
-
+/*empieza estadisticas*/
 .tablariver{
     width: 200px;
     height: 200px;
@@ -160,13 +166,12 @@ td,th{
 }
 
 
-
+/*titulos*/
 .palmares{
     text-align: center;
     background-image: url(../img/julianylachampions.jpg);
     background-repeat: no-repeat;
     height: 100vh;
-    background-attachment: fixed;
     background-size: cover;
     font-style: 'Montserrat Alternates', sans-serif;
     flex-wrap: wrap;
@@ -319,13 +324,12 @@ td,th{
 }
 
 
-
+/*proximos partidos*/
 .proximospartidos{
-    background-image: url(../img/julian\ y\ messi.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -16px;
+    background-color: #03045E;
 }
 

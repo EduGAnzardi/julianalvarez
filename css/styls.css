@@ -29,7 +29,6 @@
 
 
 /*pagina principal*/
-
 .titulo{
     color: white;
     font-family: 'Londrina Solid', cursive;
@@ -87,15 +86,14 @@
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
-    min-width: 300px;
+    min-width: 530px;
 }
 
 
 .biografia1{
-    margin: 0px 400px 100px 400px;
+    margin: 0px 10px 100px 10px;
     flex-wrap: wrap;
 }
-
 
 /*empieza estadisticas*/
 .tablariver{

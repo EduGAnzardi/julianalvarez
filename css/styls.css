@@ -7,24 +7,107 @@
 }
 
 /*menu de inicio*/
-.menu1{
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 10%;
+    background: #03045E;
     display: flex;
-    padding: 10px;
-    font-family: 'Montserrat Alternates', sans-serif;
-    color: white;
-    font-weight: 400;
-    font-size: 20px;
-    background-color: #03045E;
     justify-content: space-between;
-    gap: 1rem;
-    list-style-type: none;
-    flex-wrap: wrap;
-    min-width: 300px;
+    align-items: center;
+    z-index: 100;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+}
+
+.figuralogo{
+    font-size: 2rem;
+    text-decoration: none;
 }
 
 
-.menu1 a{
+
+.menu::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #03045E;
+    z-index: -1;
+}
+
+
+
+.navbar a{
+    font-size: 15px;
+    color: white;
     text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+#check{
+    display: none;
+}
+
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    cursor: pointer;
+    display: none;
+    color: white;
+}
+
+@media (max-width: 992px){
+    .menu{
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width: 873px){
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+
+    .icons #close-icon{
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    
+    .navbar{
+        display: block;
+        position: absolute;
+        top: 100%;
+        height: 0;
+        left: 0;
+        width: 100%;
+        background: #03045E;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar{
+        height: 17.7rem;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
 }
 
 
@@ -38,7 +121,6 @@
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
-    margin: -18px 0px;
     flex-direction: column;
     min-width: 300px;
 }

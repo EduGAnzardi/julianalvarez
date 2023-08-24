@@ -125,7 +125,7 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    min-width: 300px;
+    min-width: 872px;
 }
 
 /*footer de la web*/
@@ -138,7 +138,7 @@
     padding-left: 10px;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-width: 300px;
+    min-width: 872px;
 }
 
 
@@ -171,13 +171,14 @@
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
-    min-width: 530px;
+    min-width: 872px;
 }
 
 
 .biografia1{
-    margin: 0px 10px 100px 10px;
+    margin: 100px 20px 100px 20px;
     flex-wrap: wrap;
+    min-width: 872px;
 }
 
 /*empieza estadisticas*/

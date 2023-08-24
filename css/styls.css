@@ -20,6 +20,7 @@
     z-index: 100;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 20px;
+    min-width: 300px;
 }
 
 .figuralogo{
@@ -65,11 +66,11 @@
 
 @media (max-width: 992px){
     .menu{
-        padding: 1.3rem 5%;
+        padding: 1.3rem 2%;
     }
 }
 
-@media (max-width: 873px){
+@media (max-width: 783px){
     .icons {
         display: inline-flex;
     }
@@ -125,7 +126,7 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    min-width: 872px;
+    min-width: 300px;
 }
 
 /*footer de la web*/
@@ -137,8 +138,7 @@
     text-align: center;
     padding-left: 10px;
     justify-content: space-between;
-    flex-wrap: wrap;
-    min-width: 873px;
+    min-width: 300px;
 }
 
 
@@ -169,19 +169,65 @@
     text-align: center;
     background-image: url(../img/julian\ besando\ la\ copa\ degrade.png);
     background-repeat: no-repeat;
+    margin-top: 100px;
     height: 100vh;
     background-size: cover;
-    min-width: 873px;
+    min-width: 300px;
 }
 
 
 .biografia1{
     margin: 100px 20px 100px 20px;
-    flex-wrap: wrap;
-    min-width: 873px;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
 }
 
+
+@media (max-width: 783px){
+    .biografia{
+        font-size: small;
+        margin-top: 110px;
+    }
+}
 /*empieza estadisticas*/
+
+.estadisticas{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "rectangulo1 rectangulo2 rectangulo3"
+    "rectangulo1 rectangulo2 rectangulo3";
+    font-style: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+}
+
+.estadisticas .menustats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+td,th{
+    border: 2px solid black;
+    text-align: center;
+}
+
+.rectangulo1{
+    grid-area: rectangulo1;
+    position: relative;
+}
+
+
+.rectangulo1 img{
+    margin-top: 92px;
+    max-width: 100vh;
+    height: auto;
+}
+
+
 .tablariver{
     width: 200px;
     height: 200px;
@@ -189,7 +235,20 @@
     background-image: linear-gradient(to left,rgba(223, 18, 18, 0.836),white );
     box-shadow: 5px 5px 5px gray;
     position: absolute;
-    margin: 300px 175px;
+    top: 50%; 
+    left: 30%;
+}
+
+
+.rectangulo2{
+    grid-area: rectangulo2;
+    position: relative;
+}
+
+.rectangulo2 img{
+    margin-top: 64px;
+    max-width: 100vh;
+    height: auto;
 }
 
 .tablacity{
@@ -199,10 +258,22 @@
     background-image: linear-gradient(to left,rgb(54, 248, 255),white );
     box-shadow: 5px 5px 5px gray;
     position: absolute;
-    margin: 300px 175px;
+    top: 50%;
+    right: 25%;
+}
+
+.rectangulo3{
+    grid-area: rectangulo3;
+    position: relative;
 }
 
 
+.rectangulo3 img{
+    margin-top: 80px;
+    max-width: 100vh;
+    height: auto;
+    margin-bottom: -5px;
+}
 
 .tablaarg{
     width: 200px;
@@ -211,44 +282,18 @@
     background-image: linear-gradient(to left,rgba(20, 26, 143, 0.836),white );
     box-shadow: 5px 5px 5px gray;
     position: absolute;
-    margin: 300px 175px;
+    top: 50%;
+    right: 30%;
+}
+
+@media (max-width: 700px){
+    .estadisticas{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
 
-
-td,th{
-    border: 2px solid black;
-    text-align: center;
-}
-
-.rectangulo1{
-    height: 100vh;
-    background-image: url(../img/julianriver.jpeg);
-    background-size: cover;
-    flex-wrap: wrap;
-}
-
-.rectangulo2{
-    height: 100vh;
-    background-image: url(../img/juliancity.jpg);
-    background-size: cover;
-    flex-wrap: wrap;
-}
-
-.rectangulo3{
-    height: 100vh;
-    background-image: url(../img/julianargentina.jpg);
-    background-size: cover;flex-wrap: wrap;
-}
-
-.estadisticas{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-style: 'Montserrat Alternates', sans-serif;
-    font-size: 18px;
-    flex-wrap: wrap;
-}
 
 
 /*titulos*/
@@ -414,8 +459,17 @@ td,th{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -16px;
+    margin-top: 50px;
     background-color: #03045E;
-    min-width: 740px;
+    min-width: 300px;
 }
 
+
+@media (max-width: 700px){
+    .slide {
+        margin-top: 100px;
+}
+    .slide img{
+        height: 50vh;
+}
+}

@@ -342,6 +342,15 @@
     background: #03045E;
     height: 100vh;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+
+@media (max-width:460px){
+    .palmares{
+        margin-bottom: 30px;
+    }
 }
 
 

@@ -31,7 +31,6 @@
 
 
 .menu::before{
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -161,301 +160,164 @@
 
 
 /*biografia*/
+
 .biografia{
-    color: black;
-    font-family: 'Londrina Solid', cursive;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    background-image: url(../img/julian\ besando\ la\ copa\ degrade.png);
-    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #03045E;
+    flex-wrap: wrap;
     margin-top: 100px;
-    height: 100vh;
-    background-size: cover;
-    min-width: 300px;
 }
 
 
-.biografia1{
-    margin: 100px 20px 100px 20px;
+.card{
+    font-family: 'Montserrat Alternates', sans-serif;
+    position: relative;
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(360deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
     display: flex;
     flex-direction: column;
-    min-width: 300px;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
 }
 
 
-@media (max-width: 783px){
-    .biografia{
-        font-size: small;
-        margin-top: 110px;
-    }
+
+.card .back .h3{
+    font-size: 20px;
+    margin-top: 20px;
+    letter-spacing: 2px;
 }
+
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+
 /*empieza estadisticas*/
 
-.estadisticas{
-    width: 100%;
-    height: 100vh;
+.container{
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-top: 100px;
+    background: #03045E;
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+.container .box-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "rectangulo1 rectangulo2 rectangulo3"
-    "rectangulo1 rectangulo2 rectangulo3";
-    font-style: 'Montserrat Alternates', sans-serif;
-    font-size: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+    margin: 30px;
 }
 
-.estadisticas .menustats{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-td,th{
-    border: 2px solid black;
-    text-align: center;
+.container .box-container .box{
+    border-radius: 5px;
+    background: skyblue;
+    text-align: start;
+    padding: 30px 20px;
+    margin: 0 300px;
 }
 
-.rectangulo1{
-    grid-area: rectangulo1;
-    position: relative;
-}
-
-
-.rectangulo1 img{
-    margin-top: 92px;
-    max-width: 100vh;
-    height: auto;
-}
-
-
-.tablariver{
-    width: 200px;
+.container .box-container .box img{
     height: 200px;
-    border-collapse: collapse;
-    background-image: linear-gradient(to left,rgba(223, 18, 18, 0.836),white );
-    box-shadow: 5px 5px 5px gray;
-    position: absolute;
-    top: 50%; 
-    left: 30%;
+}
+
+.container .box-container .box h3{
+    color: #000;
+    font-size: 22px;
+    padding: 10px 0;
 }
 
 
-.rectangulo2{
-    grid-area: rectangulo2;
-    position: relative;
-}
+@media (max-width:768px){
+    .container{
+        padding: 10px;
+        margin: 60px 0px;
+    }
 
-.rectangulo2 img{
-    margin-top: 64px;
-    max-width: 100vh;
-    height: auto;
-}
-
-.tablacity{
-    width: 200px;
-    height: 200px;
-    border-collapse: collapse;
-    background-image: linear-gradient(to left,rgb(54, 248, 255),white );
-    box-shadow: 5px 5px 5px gray;
-    position: absolute;
-    top: 50%;
-    right: 25%;
-}
-
-.rectangulo3{
-    grid-area: rectangulo3;
-    position: relative;
-}
-
-
-.rectangulo3 img{
-    margin-top: 80px;
-    max-width: 100vh;
-    height: auto;
-    margin-bottom: -5px;
-}
-
-.tablaarg{
-    width: 200px;
-    height: 200px;
-    border-collapse: collapse;
-    background-image: linear-gradient(to left,rgba(20, 26, 143, 0.836),white );
-    box-shadow: 5px 5px 5px gray;
-    position: absolute;
-    top: 50%;
-    right: 30%;
-}
-
-@media (max-width: 700px){
-    .estadisticas{
-        grid-template-columns: repeat(3, 1fr);
+    .container .box-container .box{
+        margin: 0%
     }
 }
-
-
-
-
 
 /*titulos*/
 .palmares{
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
     text-align: center;
-    background-image: url(../img/julianylachampions.jpg);
-    background-repeat: no-repeat;
+    background: #03045E;
     height: 100vh;
-    background-size: cover;
-    font-style: 'Montserrat Alternates', sans-serif;
-    flex-wrap: wrap;
 }
 
 
-.titulosriver{
-    display: flex;
-    flex-wrap: wrap;
-}
+/* Palmares */
 
-
-.tituloscity{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.titulosarg{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.caja1{
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: -30px;
-}
-
-
-.caja2{
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: -30px;
-}
-
-.caja3{
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: -30px;
-}
-
-.caja4{
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: -55px;
-}
-
-.caja5{
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: -25px;
-}
-
-.caja6{
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 10px;
-}
-
-.caja7{
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 80px;
-}
-
-.caja8{
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 30px;
-}
-
-.caja9{
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 90px;
-}
-
-.caja10{
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 100px;
-}
-
-.caja11{
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 720px;
-}
-
-.caja12{
-    position: relative;
-    top: -20px;
-    right: auto;
-    bottom: auto;
-    left: 60px;
-}
-
-.caja13{
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 160px;
-}
-
-.caja14{
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 240px;
-}
-
-.caja15{
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 270px;
-}
-
-.caja16{
-    position: relative;
-    top: -20px;
-    right: auto;
-    bottom: auto;
-    left: 750px;
+.palmares{
+    background: #03045E;
+    height: 100vh;
+    width: 100%;
 }
 
 
 /*proximos partidos*/
 .proximospartidos{
+    font-family: 'Montserrat Alternates', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;

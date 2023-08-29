@@ -41,7 +41,6 @@
 }
 
 
-
 .navbar a{
     font-size: 15px;
     color: white;
@@ -179,6 +178,7 @@
     padding-left: 10px;
     justify-content: space-between;
     min-width: 300px;
+    margin-top: auto;
 }
 
 
@@ -343,7 +343,6 @@
     margin-top: 100px;
     text-align: center;
     background: #03045E;
-    height: 100vh;
 }
 
 
@@ -351,22 +350,11 @@
 
 .palmares{
     background: #03045E;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    justify-content: center;
     align-items: center;
-    min-width: 300px;
 }
 
-@media (max-width:460px){
-    .palmares{
-        margin-bottom: 30px;
-        margin-top: 0px;
-    }
-    .main .palmares{
-        margin-top: 157px;
-    }
-}
 
 
 /*proximos partidos*/

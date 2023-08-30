@@ -8,7 +8,7 @@
 
 /*menu de inicio*/
 .menu{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -20,7 +20,6 @@
     z-index: 100;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 20px;
-    min-width: 300px;
 }
 
 .figuralogo{
@@ -182,10 +181,6 @@
 }
 
 
-.logo{
-    width: 50px;
-}
-
 .logosmarcas{
     width: 50px;
 }
@@ -209,7 +204,6 @@
     min-height: 100vh;
     background: #03045E;
     flex-wrap: wrap;
-    margin-top: 100px;
 }
 
 
@@ -290,50 +284,167 @@
 
 /*empieza estadisticas*/
 
+
 .container{
     font-family: 'Montserrat Alternates', sans-serif;
-    margin-top: 100px;
     background: #03045E;
-    padding: 15px 9%;
+    padding: 5px 5%;
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
-.container .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 15px;
-    margin: 30px;
-}
 
-.container .box-container .box{
+
+.container .box-containerriver .boxriver{
     border-radius: 5px;
-    background: skyblue;
-    text-align: start;
+    background-image: url(../img/julianriverstats.png);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-position: 50% 50%;
+    height: 100vh;
     padding: 30px 20px;
-    margin: 0 300px;
-}
-
-.container .box-container .box img{
-    height: 200px;
-}
-
-.container .box-container .box h3{
-    color: #000;
-    font-size: 22px;
-    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 
 
-@media (max-width:768px){
-    .container{
-        padding: 10px;
-        margin-top: 60px;
-    }
-
-    .container .box-container .box{
-        margin: 0%
-    }
+.container .box-containerriver .boxriver .equiporiver{
+    font-size: 30px;
+    background-image: repeating-linear-gradient(to right, white, red);
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
+
+.container .box-containerriver .boxriver .partidosriver{
+    font-size: 20px;
+    background-image: repeating-linear-gradient(to right, white, red);
+    width: 90%;
+    text-align-last: justify;
+    margin-bottom: 20px;
+}
+
+.container .box-containerriver .boxriver .golesriver{
+    font-size: 20px;
+    background-image: repeating-linear-gradient(to right, white, red);
+    width: 90%;
+    text-align-last: justify;
+    margin-bottom: 20px;
+}
+
+
+.container .box-containerriver .boxriver .asistenciasriver{
+    font-size: 20px;
+    background-image: repeating-linear-gradient(to right, white, red);
+    width: 90%;
+    text-align-last: justify;
+    margin-bottom: 20px;
+}
+
+
+.container .box-containercity {
+    border-radius: 5px;
+    background-image: url(../img/juliancity.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 1500px;
+    height: 100vh;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.container .box-containercity .boxcity .equipocity{
+    font-size: 30px;
+    background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+
+.container .box-containercity .boxcity .partidoscity{
+    font-size: 20px;
+    background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
+    width: 90%;
+    text-align-last: justify;
+    margin-bottom: 20px;
+}
+
+.container .box-containercity .boxcity .golescity{
+    font-size: 20px;
+    background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
+    width: 90%;
+    text-align-last: justify;
+    margin-bottom: 20px;
+}
+
+
+.container .box-containercity .boxcity .asistenciascity{
+    font-size: 20px;
+    background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
+    width: 90%;
+    text-align-last: justify;
+    margin-bottom: 20px;
+}
+
+
+.container .box-containerarg {
+    border-radius: 5px;
+    background-image: url(../img/julianarg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 1500px;
+    height: 100vh;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.container .box-containerarg .boxarg .equipoarg{
+    font-size: 30px;
+    background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.container .box-containerarg .boxarg .partidosarg{
+    font-size: 20px;
+    background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
+    width: 90%;
+    text-align-last: justify;
+    margin-bottom: 20px;
+}
+
+.container .box-containerarg .boxarg .golesarg{
+    font-size: 20px;
+    background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
+    width: 90%;
+    text-align-last: justify;
+    margin-bottom: 20px;
+}
+
+
+.container .box-containerarg .boxarg .asistenciasarg{
+    font-size: 20px;
+    background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
+    width: 90%;
+    text-align-last: justify;
+    margin-bottom: 20px;
+}
+
 
 /*titulos*/
 .palmares{

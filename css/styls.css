@@ -8,7 +8,7 @@
 
 /*menu de inicio*/
 .menu{
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -24,29 +24,27 @@
 
 .figuralogo{
     font-size: 2rem;
+    box-shadow: 5px 5px 5px black;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #f3f3f3;
+    font-weight: 500;
     text-decoration: none;
+    margin-left: 40px;
 }
 
 
-
-.menu::before{
+.navbar a::before{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #03045E;
-    z-index: -1;
+    background: #f3f3f3;
 }
 
-
-.navbar a{
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 2.5rem;
-}
 
 #check{
     display: none;
@@ -122,15 +120,24 @@
 
 /*pagina principal*/
 .titulo{
-    margin-top: 100px;
     margin-left: 50px;
     margin-bottom: auto;
-    color: white;
+    margin-top: 120px;
+    color: #f3f3f3;
+    background-color: #03045E;
+    border: #f3f3f3;
     font-family: 'Londrina Solid', cursive;
     font-size: 70px;
     font-weight: 900;
-    min-width: 300px;
 }
+
+
+.titulo:hover{
+    transform: translateY(-10px);
+    background-color: #0ac5ee;
+    color: #000;
+}
+
 
 .pag1{
     display: flex;
@@ -167,8 +174,33 @@
     font-size: 16px;
 }
 
+
+@keyframes show{
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+img {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+
 /*footer de la web*/
 .footer{
+    font-size: 20px;
     display: flex;
     color: white;
     background-color: #03045E;
@@ -297,6 +329,7 @@
 
 
 .container .box-containerriver .boxriver{
+    margin-top: 100px;
     border-radius: 5px;
     background-image: url(../img/julianriverstats.png);
     background-repeat: no-repeat;
@@ -315,7 +348,6 @@
     font-size: 30px;
     background-image: repeating-linear-gradient(to right, white, red);
     width: 90%;
-    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -451,20 +483,16 @@
     font-family: 'Montserrat Alternates', sans-serif;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
     text-align: center;
-    background: #03045E;
-}
-
-
-/* Palmares */
-
-.palmares{
+    align-items: center;
     background: #03045E;
     min-height: 100vh;
     width: 100%;
-    align-items: center;
 }
+
+
+
+
 
 
 
@@ -474,17 +502,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
     background-color: #03045E;
-    min-width: 300px;
 }
 
-
-@media (max-width: 700px){
-    .slide {
-        margin-top: 100px;
-}
-    .slide img{
-        height: 50vh;
-}
-}

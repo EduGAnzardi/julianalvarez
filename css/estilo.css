@@ -426,6 +426,7 @@
 
 .palmares {
   font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
   display: flex;
   flex-direction: column;
   text-align: center;

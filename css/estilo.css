@@ -26,11 +26,27 @@
 }
 
 .navbar a {
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   font-size: 18px;
   color: #f3f3f3;
   font-weight: 500;
   text-decoration: none;
   margin-left: 40px;
+}
+.navbar .item1 {
+  animation-delay: 0.2s;
+}
+.navbar .item2 {
+  animation-delay: 0.4s;
+}
+.navbar .item3 {
+  animation-delay: 0.6s;
+}
+.navbar .item4 {
+  animation-delay: 0.8s;
+}
+.navbar .item5 {
+  animation-delay: 1s;
 }
 
 .navbar a::before {
@@ -54,7 +70,16 @@
   display: none;
   color: white;
 }
-
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @media (max-width: 992px) {
   .menu {
     padding: 1.3rem 2%;
@@ -256,7 +281,7 @@
   transform: perspective(600px) rotateY(360deg);
 }
 
-.container {
+.estadisticas {
   font-family: "Montserrat Alternates", sans-serif;
   background: #03045E;
   padding: 5px 5%;

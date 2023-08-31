@@ -1,0 +1,49 @@
+.container {
+    .box-containerarg {
+        border-radius: 5px;
+        background-image: url(../img/julianarg.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 1500px;
+        height: 100vh;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .boxarg {
+            .equipoarg {
+                font-size: 30px;
+                background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
+                width: 90%;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            .partidosarg{
+                font-size: 20px;
+                background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
+                width: 90%;
+                text-align-last: justify;
+                margin-bottom: 20px;
+            }
+
+            .golesarg{
+                font-size: 20px;
+                background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
+                width: 90%;
+                text-align-last: justify;
+                margin-bottom: 20px;
+            }
+
+            .asistenciasarg{
+                font-size: 20px;
+                background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
+                width: 90%;
+                text-align-last: justify;
+                margin-bottom: 20px;
+            }
+            
+        }
+    }
+}

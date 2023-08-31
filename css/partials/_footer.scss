@@ -1,0 +1,25 @@
+.footer{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: $mainColor;
+    padding-block: 10px;
+    text-align: center;
+    padding-left: 10px;
+    justify-content: space-between;
+    margin-top: auto;
+
+    .logosmarcas{
+        width: 50px;
+    }
+    
+    
+    .logosapp{
+        display: flex;
+        list-style-type: none;
+        margin-top: 15px;
+        gap: 1rem;
+        justify-content: center;
+    }
+}

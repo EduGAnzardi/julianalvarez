@@ -1,0 +1,49 @@
+.container {
+    .box-containerriver { 
+        .boxriver{
+            margin-top: 100px;
+            border-radius: 5px;
+            background-image: url(../img/julianriverstats.png);
+            background-repeat: no-repeat;
+            background-size: 1500px;
+            background-position: 50% 50%;
+            height: 100vh;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            .equiporiver{
+                font-size: 30px;
+                background-image: repeating-linear-gradient(to right, white, red);
+                width: 90%;
+                margin-bottom: 20px;
+            }
+
+            .partidosriver{
+                font-size: 20px;
+                background-image: repeating-linear-gradient(to right, white, red);
+                width: 90%;
+                text-align-last: justify;
+                margin-bottom: 20px;
+            }
+
+            .golesriver{
+                font-size: 20px;
+                background-image: repeating-linear-gradient(to right, white, red);
+                width: 90%;
+                text-align-last: justify;
+                margin-bottom: 20px;
+            }
+
+            .asistenciasriver{
+                font-size: 20px;
+                background-image: repeating-linear-gradient(to right, white, red);
+                width: 90%;
+                text-align-last: justify;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

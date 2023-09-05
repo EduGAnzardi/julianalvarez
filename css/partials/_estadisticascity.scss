@@ -15,34 +15,58 @@
             .equipocity{
                 font-size: 30px;
                 background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
-                width: 90%;
+                width: 20%;
                 margin-top: 10px;
                 margin-bottom: 20px;
                 align-items: flex-start;
+                animation-name: equipocity;
+                animation-delay: 5s;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
             }
+
+            @keyframes equipocity {
+                100%{
+                    width: 90%;
+                }
+                
+            }
+            
 
             .partidoscity{
                 font-size: 20px;
                 background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
-                width: 90%;
+                width: 20%;
                 text-align-last: justify;
                 margin-bottom: 20px;
+                animation-name: equipocity;
+                animation-delay: 5s;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
             }
 
             .golescity{
                 font-size: 20px;
                 background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
-                width: 90%;
+                width: 20%;
                 text-align-last: justify;
                 margin-bottom: 20px;
+                animation-name: equipocity;
+                animation-delay: 5s;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
             }
 
             .asistenciascity{
                 font-size: 20px;
                 background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
-                width: 90%;
+                width: 20%;
                 text-align-last: justify;
                 margin-bottom: 20px;
+                animation-name: equipocity;
+                animation-delay: 5s;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
             }
         }
     }

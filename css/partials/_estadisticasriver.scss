@@ -17,32 +17,55 @@
             .equiporiver{
                 font-size: 30px;
                 background-image: repeating-linear-gradient(to right, white, red);
-                width: 90%;
+                width: 20%;
                 margin-bottom: 20px;
+                animation-name: equiporiver;
+                animation-delay: 2s;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes equiporiver {
+                100%{
+                    width: 90%;
+                }
+                
             }
 
             .partidosriver{
                 font-size: 20px;
                 background-image: repeating-linear-gradient(to right, white, red);
-                width: 90%;
+                width: 20%;
                 text-align-last: justify;
                 margin-bottom: 20px;
+                animation-name: equiporiver;
+                animation-delay: 2s;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
             }
 
             .golesriver{
                 font-size: 20px;
                 background-image: repeating-linear-gradient(to right, white, red);
-                width: 90%;
+                width: 20%;
                 text-align-last: justify;
                 margin-bottom: 20px;
+                animation-name: equiporiver;
+                animation-delay: 2s;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
             }
 
             .asistenciasriver{
                 font-size: 20px;
                 background-image: repeating-linear-gradient(to right, white, red);
-                width: 90%;
+                width: 20%;
                 text-align-last: justify;
                 margin-bottom: 20px;
+                animation-name: equiporiver;
+                animation-delay: 2s;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
             }
         }
     }

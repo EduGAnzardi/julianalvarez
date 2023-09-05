@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julian Alvarez-Próximos Partidos</title>
     <meta name="description" content="Miralo en sus proximos partidos.">
-    <meta name="keywords" content="Argentina Goleador Campeon del Mundo Selección Futbol Delantero River Manchester City.">
+    <meta name="keywords" content="Argentina Goleador Campeon del Mundo Selección Futbol Delantero River Manchester City Araña.">
     <link rel="shortcut icon" href="../img/figurajulian1.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styls.css">
     <link rel="stylesheet" href="../css/estilo.css">
 
@@ -17,7 +18,7 @@
 <body>
 
 <header class="menu">         <!--menu-->
-        <a href="../index.html" class="figuralogo"><img src="../img/figurajulian1-removebg-preview.png" width="50px" height="50px" alt="logo Julian"></a>
+        <a href="../index.html" class="figuralogo" data-aos="flip-left"><img src="../img/figurajulian1-removebg-preview.png" width="50px" height="50px" alt="logo Julian"></a>
 
         <input type="checkbox" id="check">
         <label for="check" class="icons">
@@ -49,24 +50,26 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <div class="carousel-item active">
                 <img src="../img/citynew.jpg" class="rounded mx-auto d-block img-fluid" alt="imagen cityvsnew">
-            <div class="carousel-caption">
+            <div class="carousel-caption bg-dark">
                 <h5>Manchester City vs Newcastle</h5>
                 <p>Premier League <br>Sab 19/08, 16:00 hs</p>
             </div>
             </div>
             <div class="carousel-item">
                 <img src="../img/citysheff.png" class="rounded mx-auto d-block img-fluid" alt="imagencityvssheffield">
-            <div class="carousel-caption">
+            <div class="carousel-caption bg-dark">
                 <h5>Sheffield United vs Manchester City</h5>
                 <p>Premier League <br>Dom 27/08, 10:00 hs</p>
             </div>
             </div>
             <div class="carousel-item">
                 <img src="../img/cityful.png" class="rounded mx-auto d-block img-fluid" alt="cityvsfulham">
-            <div class="carousel-caption">
+            <div class="carousel-caption bg-dark">
                 <h5>Manchester City vs Fulham</h5>
                 <p>Premier League <br>Sab 02/09, 11:00hs</p>
             </div>
@@ -132,5 +135,9 @@
 </footer>                       <!--fin de pie de pagina-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

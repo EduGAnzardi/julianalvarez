@@ -143,7 +143,7 @@
   background-color: #03045E;
   border: #f3f3f3;
   font-family: "Londrina Solid", cursive;
-  font-size: 70px;
+  font-size: 80px;
   font-weight: 900;
 }
 .pag1 .titulo:hover {
@@ -307,32 +307,53 @@
 .container .box-containerriver .boxriver .equiporiver {
   font-size: 30px;
   background-image: repeating-linear-gradient(to right, white, red);
-  width: 90%;
+  width: 20%;
   margin-bottom: 20px;
+  animation-name: equiporiver;
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes equiporiver {
+  100% {
+    width: 90%;
+  }
 }
 .container .box-containerriver .boxriver .partidosriver {
   font-size: 20px;
   background-image: repeating-linear-gradient(to right, white, red);
-  width: 90%;
+  width: 20%;
   -moz-text-align-last: justify;
        text-align-last: justify;
   margin-bottom: 20px;
+  animation-name: equiporiver;
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .container .box-containerriver .boxriver .golesriver {
   font-size: 20px;
   background-image: repeating-linear-gradient(to right, white, red);
-  width: 90%;
+  width: 20%;
   -moz-text-align-last: justify;
        text-align-last: justify;
   margin-bottom: 20px;
+  animation-name: equiporiver;
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .container .box-containerriver .boxriver .asistenciasriver {
   font-size: 20px;
   background-image: repeating-linear-gradient(to right, white, red);
-  width: 90%;
+  width: 20%;
   -moz-text-align-last: justify;
        text-align-last: justify;
   margin-bottom: 20px;
+  animation-name: equiporiver;
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .container .box-containercity {
@@ -350,34 +371,55 @@
 .container .box-containercity .boxcity .equipocity {
   font-size: 30px;
   background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
-  width: 90%;
+  width: 20%;
   margin-top: 10px;
   margin-bottom: 20px;
   align-items: flex-start;
+  animation-name: equipocity;
+  animation-delay: 5s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes equipocity {
+  100% {
+    width: 90%;
+  }
 }
 .container .box-containercity .boxcity .partidoscity {
   font-size: 20px;
   background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
-  width: 90%;
+  width: 20%;
   -moz-text-align-last: justify;
        text-align-last: justify;
   margin-bottom: 20px;
+  animation-name: equipocity;
+  animation-delay: 5s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .container .box-containercity .boxcity .golescity {
   font-size: 20px;
   background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
-  width: 90%;
+  width: 20%;
   -moz-text-align-last: justify;
        text-align-last: justify;
   margin-bottom: 20px;
+  animation-name: equipocity;
+  animation-delay: 5s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .container .box-containercity .boxcity .asistenciascity {
   font-size: 20px;
   background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
-  width: 90%;
+  width: 20%;
   -moz-text-align-last: justify;
        text-align-last: justify;
   margin-bottom: 20px;
+  animation-name: equipocity;
+  animation-delay: 5s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .container .box-containerarg {
@@ -395,33 +437,54 @@
 .container .box-containerarg .boxarg .equipoarg {
   font-size: 30px;
   background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
-  width: 90%;
+  width: 20%;
   margin-top: 10px;
   margin-bottom: 20px;
+  animation-name: equipoarg;
+  animation-delay: 8s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes equipoarg {
+  100% {
+    width: 90%;
+  }
 }
 .container .box-containerarg .boxarg .partidosarg {
   font-size: 20px;
   background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
-  width: 90%;
+  width: 20%;
   -moz-text-align-last: justify;
        text-align-last: justify;
   margin-bottom: 20px;
+  animation-name: equipoarg;
+  animation-delay: 8s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .container .box-containerarg .boxarg .golesarg {
   font-size: 20px;
   background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
-  width: 90%;
+  width: 20%;
   -moz-text-align-last: justify;
        text-align-last: justify;
   margin-bottom: 20px;
+  animation-name: equipoarg;
+  animation-delay: 8s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .container .box-containerarg .boxarg .asistenciasarg {
   font-size: 20px;
   background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
-  width: 90%;
+  width: 20%;
   -moz-text-align-last: justify;
        text-align-last: justify;
   margin-bottom: 20px;
+  animation-name: equipoarg;
+  animation-delay: 8s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .palmares {

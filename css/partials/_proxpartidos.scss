@@ -1,7 +1,23 @@
 .proximospartidos{
     font-family: $fontKanit;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     background-color: $mainColor;
+
+    .card{
+        width: 300px;
+        height: 250px;
+        margin: 3% 15%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .proximospartidos{
+        .card{
+            height: auto;
+            width: auto;
+        }
+    }
 }

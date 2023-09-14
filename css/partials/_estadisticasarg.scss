@@ -1,9 +1,9 @@
 .container {
     .box-containerarg {
         border-radius: 5px;
-        background-image: url(../img/julianarg.png);
+        background-image: url(../../img/julianarg\ -\ copia.png);
         background-repeat: no-repeat;
-        background-position: 50% 50%;
+        background-position: 50% 10%;
         background-size: 1500px;
         height: 100vh;
         padding: 30px 20px;
@@ -57,6 +57,18 @@
                 animation-fill-mode: forwards;
             }
 
+            .promediogolarg{
+                font-size: 20px;
+                background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
+                width: 20%;
+                text-align-last: justify;
+                margin-bottom: 20px;
+                animation-name: equipoarg;
+                animation-delay: 8s;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+            }
+
             .asistenciasarg{
                 font-size: 20px;
                 background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
@@ -69,6 +81,17 @@
                 animation-fill-mode: forwards;
             }
             
+            .promediosasistarg{
+                font-size: 20px;
+                background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
+                width: 20%;
+                text-align-last: justify;
+                margin-bottom: 20px;
+                animation-name: equipoarg;
+                animation-delay: 8s;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+            }
         }
     }
 }

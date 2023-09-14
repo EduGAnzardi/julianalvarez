@@ -149,6 +149,8 @@
 .pag1 .titulo:hover {
   transform: translateY(-10px);
   background-color: #0ac5ee;
+  width: 200PX;
+  height: 100px;
   color: #000;
 }
 .pag1 .nombre {
@@ -156,11 +158,19 @@
   width: 70%;
 }
 .pag1 .nombre img {
-  max-width: 50%;
-  float: left;
+  max-width: 70%;
   border: 3px solid #f3f3f3;
   border-radius: 10px;
   margin-right: 15px;
+}
+.pag1 .nombre .guardiola {
+  float: left;
+}
+.pag1 .nombre .scaloni {
+  float: right;
+}
+.pag1 .nombre .messi {
+  float: left;
 }
 .pag1 .nombre img {
   view-timeline-name: --image;
@@ -288,6 +298,7 @@
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
+  color: black;
 }
 
 .container .box-containerriver .boxriver {
@@ -343,7 +354,31 @@
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
+.container .box-containerriver .boxriver .promediogolriver {
+  font-size: 20px;
+  background-image: repeating-linear-gradient(to right, white, red);
+  width: 20%;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+  margin-bottom: 20px;
+  animation-name: equiporiver;
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
 .container .box-containerriver .boxriver .asistenciasriver {
+  font-size: 20px;
+  background-image: repeating-linear-gradient(to right, white, red);
+  width: 20%;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+  margin-bottom: 20px;
+  animation-name: equiporiver;
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.container .box-containerriver .boxriver .promediosasistriver {
   font-size: 20px;
   background-image: repeating-linear-gradient(to right, white, red);
   width: 20%;
@@ -409,7 +444,31 @@
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
+.container .box-containercity .boxcity .promediogolcity {
+  font-size: 20px;
+  background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
+  width: 20%;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+  margin-bottom: 20px;
+  animation-name: equipocity;
+  animation-delay: 5s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
 .container .box-containercity .boxcity .asistenciascity {
+  font-size: 20px;
+  background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
+  width: 20%;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+  margin-bottom: 20px;
+  animation-name: equipocity;
+  animation-delay: 5s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.container .box-containercity .boxcity .promediosasistcity {
   font-size: 20px;
   background-image: repeating-linear-gradient(to right, white, rgb(0, 225, 255));
   width: 20%;
@@ -424,9 +483,9 @@
 
 .container .box-containerarg {
   border-radius: 5px;
-  background-image: url(../img/julianarg.png);
+  background-image: url(../../img/julianarg\ -\ copia.png);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 10%;
   background-size: 1500px;
   height: 100vh;
   padding: 30px 20px;
@@ -474,7 +533,31 @@
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
+.container .box-containerarg .boxarg .promediogolarg {
+  font-size: 20px;
+  background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
+  width: 20%;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+  margin-bottom: 20px;
+  animation-name: equipoarg;
+  animation-delay: 8s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
 .container .box-containerarg .boxarg .asistenciasarg {
+  font-size: 20px;
+  background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
+  width: 20%;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+  margin-bottom: 20px;
+  animation-name: equipoarg;
+  animation-delay: 8s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.container .box-containerarg .boxarg .promediosasistarg {
   font-size: 20px;
   background-image: repeating-linear-gradient(to right, white, rgb(38, 0, 255));
   width: 20%;
@@ -489,20 +572,90 @@
 
 .palmares {
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 12px;
+  background-color: #03045E;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.palmares .clubriver {
+  color: white;
+  width: 100%;
+  padding: 5px 5px 0px;
+  font-size: 2.5rem;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 10px;
+}
+.palmares .rivertitulos {
+  background-color: rgba(240, 54, 54, 0.993);
+  width: 100%;
+  height: 100%;
   text-align: center;
   align-items: center;
-  background: #03045E;
-  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+.palmares .clubcity {
+  color: white;
   width: 100%;
+  padding: 5px 5px 0px;
+  font-size: 2.5rem;
+  text-decoration: underline;
+  text-align: center;
+}
+.palmares .citytitulos {
+  background-color: rgba(85, 194, 183, 0.993);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+.palmares .clubarg {
+  color: white;
+  width: 100%;
+  padding: 5px 5px 0px;
+  font-size: 2.5rem;
+  text-decoration: underline;
+  text-align: center;
+}
+.palmares .argtitulos {
+  background-color: rgba(66, 130, 191, 0.993);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
 }
 
 .proximospartidos {
   font-family: "Montserrat Alternates", sans-serif;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #03045E;
+}
+.proximospartidos .card {
+  width: 300px;
+  height: 250px;
+  margin: 3% 15%;
+}
+
+@media (max-width: 400px) {
+  .proximospartidos .card {
+    height: auto;
+    width: auto;
+  }
 }/*# sourceMappingURL=estilo.css.map */

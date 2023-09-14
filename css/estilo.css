@@ -589,7 +589,7 @@
 }
 .palmares .rivertitulos {
   background-color: rgba(240, 54, 54, 0.993);
-  width: 100%;
+  width: 85%;
   height: 100%;
   text-align: center;
   align-items: center;
@@ -609,7 +609,7 @@
 }
 .palmares .citytitulos {
   background-color: rgba(85, 194, 183, 0.993);
-  width: 100%;
+  width: 85%;
   height: 100%;
   text-align: center;
   align-items: center;
@@ -629,7 +629,7 @@
 }
 .palmares .argtitulos {
   background-color: rgba(66, 130, 191, 0.993);
-  width: 100%;
+  width: 85%;
   height: 100%;
   text-align: center;
   align-items: center;
